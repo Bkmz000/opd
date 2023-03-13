@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Тест</title>
+    <link href="css/main.min.css" rel="stylesheet">
+    <link href="css/registration.min.css" rel="stylesheet">
+</head>
+<body> 
+  <div class="arrow">
+    <img onclick="window.location.href = 'index.html';" src="img/arrow-left.svg" alt="">
+  </div>
+  <div class="main_div">
+    <div class="logo">
+      <h1>Регистрация</h1>
+    </div>
+    <div class="form">
+      <form action="php/validation-form/registration.php" method="post">
+        <input type="name" placeholder="Имя" name="name" id="name"><br>
+        <input type="name" placeholder="Фамилия" name ="surname" id="surname"><br>
+        <input type="mail" placeholder="Email" name="login" id="login"><br>
+        <input type="password" placeholder="Пароль" name="pass" id="pass"><br>
+        <input type="password" placeholder="Повторите пароль"><br>
+        <button class="btn" type="submit">Далее</button>
+      </form>
+      
+      
+      <div class="link">
+        <p>У вас уже есть аккаунт? <a href="entry.html">Войти</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/7df641a1b7.js" crossorigin="anonymous"></script>
+  <script src="js/index.min.js"></script>
+</body>
+</html>
