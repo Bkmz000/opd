@@ -5,30 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Тест</title>
     <link href="css/main.min.css" rel="stylesheet">
-    <link href="css/registration.min.css" rel="stylesheet">
+    <link href="css/entry.min.css" rel="stylesheet">
 </head>
-<body> 
+<body>
+  <div class="picture">
+    <img src="img/second_pic.svg" alt="">
+  </div> 
   <div class="arrow">
     <img onclick="window.location.href = 'index.html';" src="img/arrow-left.svg" alt="">
   </div>
   <div class="main_div">
     <div class="logo">
-      <h1>Регистрация</h1>
+      <h1>Вход</h1>
     </div>
     <div class="form">
-      <form>
-        <input type="name" placeholder="Имя"><br>
-        <input type="name" placeholder="Фамилия"><br>
-        <input type="mail" placeholder="Email"><br>
-        <input type="password" placeholder="Пароль"><br>
-        <input type="password" placeholder="Повторите пароль">
+      <form action="php/validation-form/auth.php" method="post">
+        <input type="mail" placeholder="Email" name="login" id="login"><img src="img/mail.svg" alt=""><br>
+        <input type="password" placeholder="Пароль" name="pass" id="pass"><img src="img/lock.svg" alt=""><br><br>
+        <button class="btn" type="submit">
+          Войти
+        </button>
       </form>
-      <div onclick="window.location.href = 'reg.html';" class="btn">
-        Далее
-      </div>
-      <div class="link">
-        <p>У вас уже есть аккаунт? <a href="entry.html">Войти</a></p>
-      </div>
     </div>
   </div>
 
