@@ -17,12 +17,26 @@
     $coefficient = $mysql->query("SELECT `coefficient` FROM `users` WHERE `id` = '$user'");
     $result = $coefficient->fetch_assoc();
 
+    //Считываем предыдущие значения importance для профессий
+    $previousPointForFIrst = $mysql->query("SELECT `importance` FROM `qualities` WHERE `quality` = '$firstQuality'");
+    $previousPointForSecond = $mysql->query("SELECT `importance` FROM `qualities` WHERE `quality` = '$secondQuality'");
+    $previousPointForThird = $mysql->query("SELECT `importance` FROM `qualities` WHERE `quality` = '$thirdQuality'");
+    $previousPointForFourth = $mysql->query("SELECT `importance` FROM `qualities` WHERE `quality` = '$fourthQuality'");
+    $previousPointForFifth = $mysql->query("SELECT `importance` FROM `qualities` WHERE `quality` = '$fifthQuality'");
+
+    $previousPointForFIrst = $previousPointForFIrst->fetch_assoc();
+    $previousPointForSecond = $previousPointForSecond->fetch_assoc();
+    $previousPointForThird = $previousPointForThird->fetch_assoc();
+    $previousPointForFourth = $previousPointForFourth->fetch_assoc();
+    $previousPointForFifth = $previousPointForFifth->fetch_assoc();
+     
+
     
-    $actualPointForFirst = $result['coefficient'] * 5;
-    $actualPointForSecond = $result['coefficient'] * 4;
-    $actualPointForThird = $result['coefficient'] * 3;
-    $actualPointForFourth = $result['coefficient'] * 2;
-    $actualPointForFifth = $result['coefficient'] * 1;
+    $actualPointForFirst = $result['coefficient'] * 5.0 + $previousPointForFIrst['importance'];
+    $actualPointForSecond = $result['coefficient'] * 4  + $previousPointForFIrst['importance'] ;
+    $actualPointForThird = $result['coefficient'] * 3  + $previousPointForFIrst['importance'];
+    $actualPointForFourth = $result['coefficient'] * 2  + $previousPointForFIrst['importance'];
+    $actualPointForFifth = $result['coefficient'] * 1  + $previousPointForFIrst['importance'];
 
 
     //Обовляем баллы..
