@@ -32,7 +32,7 @@
 
         <div class="arrow">
 
-            <img onclick="window.location.href = 'results.html';" src="img/arrow-left.svg" alt="">
+            <img onclick="window.location.href = 'php/results/professionsResult/exit.php';" src="img/arrow-left.svg" alt="">
 
         </div>
 
@@ -44,11 +44,11 @@
 
                 <div class="logo">
 
-                    <h1>Профессия 1</h1>
+                    <h1>Java Developer</h1>
 
                 </div>
 
-                <p>Качество <span style="color: #FCC02A;">1</span></p>
+                <p><span style="color: #FCC02A;"><?php echo $_COOKIE['prof1_quality_1_quality']; ?></span></p>
 
                 <div class="result">
 
@@ -58,15 +58,15 @@
 
                     </div>
 
-                    <div class="value">75</div>
+                    <div class="value"><?php echo $_COOKIE["prof1_quality_1_importance"]; ?></div>
 
-                    <div class="percent">(23.15%)</div>
+                
 
                 </div>
 
 
 
-                <p>Качество <span style="color: #B0BFC6;">2</span></p>
+                <p><span style="color: #B0BFC6;"><?php echo $_COOKIE['prof1_quality_2_quality']; ?></span></p>
 
                 <div class="result">
 
@@ -76,15 +76,15 @@
 
                     </div>
 
-                    <div class="value">60</div>
+                    <div class="value"><?php echo $_COOKIE["prof1_quality_2_importance"]; ?></div>
 
-                    <div class="percent">(23.15%)</div>
+                
 
                 </div>
 
 
 
-                <p>Качество <span style="color: #E65425;">3</span></p>
+                <p><span style="color: #E65425;"><?php echo $_COOKIE['prof1_quality_3_quality']; ?></span></p>
 
                 <div class="result">
 
@@ -94,15 +94,15 @@
 
                     </div>
 
-                    <div class="value">45</div>
+                    <div class="value"><?php echo $_COOKIE["prof1_quality_3_importance"]; ?></div>
 
-                    <div class="percent">(23.15%)</div>
+                
 
                 </div>
 
 
 
-                <p>Качество <span style="color: #7A5648;">4</span></p>
+                <p><span style="color: #7A5648;"><?php echo $_COOKIE['prof1_quality_4_quality']; ?></span></p>
 
                 <div class="result">
 
@@ -112,15 +112,15 @@
 
                     </div>
 
-                    <div class="value">20</div>
+                    <div class="value"><?php echo $_COOKIE["prof1_quality_4_importance"]; ?></div>
 
-                    <div class="percent">(23.15%)</div>
+                
 
                 </div>
 
 
 
-                <p>Качество 5</p>
+                <p><?php echo $_COOKIE['prof1_quality_5_quality']; ?></p>
 
                 <div class="result">
 
@@ -130,9 +130,9 @@
 
                     </div>
 
-                    <div class="value">2</div>
+                    <div class="value"><?php echo $_COOKIE["prof1_quality_5_importance"]; ?></div>
 
-                    <div class="percent">(23.15%)</div>
+                
 
                 </div>
 
@@ -146,11 +146,11 @@
 
                 <div class="logo">
 
-                    <h1>Профессия 2</h1>
+                    <h1>Product manager</h1>
 
                 </div>
 
-                <p>Качество <span style="color: #FCC02A;">1</span></p>
+                <p><span style="color: #FCC02A;"><?php echo $_COOKIE['prof2_quality_1_quality']; ?></span></p>
 
                 <div class="result">
 
@@ -160,15 +160,15 @@
 
                     </div>
 
-                    <div class="value">75</div>
+                    <div class="value"><?php echo $_COOKIE["prof2_quality_1_importance"]; ?></div>
 
-                    <div class="percent">(23.15%)</div>
+                
 
                 </div>
 
 
 
-                <p>Качество <span style="color: #B0BFC6;">2</span></p>
+                <p><span style="color: #B0BFC6;"><?php echo $_COOKIE['prof2_quality_2_quality']; ?></span></p>
 
                 <div class="result">
 
@@ -178,15 +178,15 @@
 
                     </div>
 
-                    <div class="value">60</div>
+                    <div class="value"><?php echo $_COOKIE["prof2_quality_2_importance"]; ?></div>
 
-                    <div class="percent">(23.15%)</div>
+                
 
                 </div>
 
 
 
-                <p>Качество <span style="color: #E65425;">3</span></p>
+                <p><span style="color: #E65425;"><?php echo $_COOKIE['prof2_quality_3_quality']; ?></span></p>
 
                 <div class="result">
 
@@ -196,15 +196,15 @@
 
                     </div>
 
-                    <div class="value">45</div>
+                    <div class="value"><?php echo $_COOKIE["prof2_quality_3_importance"]; ?></div>
 
-                    <div class="percent">(23.15%)</div>
+                
 
                 </div>
 
 
 
-                <p>Качество <span style="color: #7A5648;">4</span></p>
+                <p><span style="color: #7A5648;"><?php echo $_COOKIE['prof2_quality_4_quality']; ?></span></p>
 
                 <div class="result">
 
@@ -214,15 +214,15 @@
 
                     </div>
 
-                    <div class="value">20</div>
+                    <div class="value"><?php echo $_COOKIE["prof2_quality_4_importance"]; ?></div>
 
-                    <div class="percent">(23.15%)</div>
+                
 
                 </div>
 
 
 
-                <p>Качество 5</p>
+                <p><?php echo $_COOKIE['prof2_quality_5_quality']; ?></p>
 
                 <div class="result">
 
@@ -232,9 +232,9 @@
 
                     </div>
 
-                    <div class="value">2</div>
+                    <div class="value"><?php echo $_COOKIE["prof2_quality_5_importance"]; ?></div>
 
-                    <div class="percent">(23.15%)</div>
+                
 
                 </div>
 
@@ -248,11 +248,11 @@
 
                 <div class="logo">
 
-                    <h1>Профессия 3</h1>
+                    <h1>UI/UX Designer</h1>
 
                 </div>
 
-                <p>Качество <span style="color: #FCC02A;">1</span></p>
+                <p><span style="color: #FCC02A;"><?php echo $_COOKIE['prof3_quality_1_quality']; ?></span></p>
 
                 <div class="result">
 
@@ -262,15 +262,15 @@
 
                     </div>
 
-                    <div class="value">75</div>
+                    <div class="value"><?php echo $_COOKIE["prof3_quality_1_importance"]; ?></div>
 
-                    <div class="percent">(23.15%)</div>
+                
 
                 </div>
 
 
 
-                <p>Качество <span style="color: #B0BFC6;">2</span></p>
+                <p><span style="color: #B0BFC6;"><?php echo $_COOKIE['prof3_quality_2_quality']; ?></span></p>
 
                 <div class="result">
 
@@ -280,15 +280,15 @@
 
                     </div>
 
-                    <div class="value">60</div>
+                    <div class="value"><?php echo $_COOKIE["prof3_quality_2_importance"]; ?></div>
 
-                    <div class="percent">(23.15%)</div>
+                
 
                 </div>
 
 
 
-                <p>Качество <span style="color: #E65425;">3</span></p>
+                <p><span style="color: #E65425;"><?php echo $_COOKIE['prof3_quality_3_quality']; ?></span></p>
 
                 <div class="result">
 
@@ -298,15 +298,15 @@
 
                     </div>
 
-                    <div class="value">45</div>
+                    <div class="value"><?php echo $_COOKIE["prof3_quality_3_importance"]; ?></div>
 
-                    <div class="percent">(23.15%)</div>
+                
 
                 </div>
 
 
 
-                <p>Качество <span style="color: #7A5648;">4</span></p>
+                <p><span style="color: #7A5648;"><?php echo $_COOKIE['prof3_quality_4_quality']; ?></span></p>
 
                 <div class="result">
 
@@ -316,15 +316,15 @@
 
                     </div>
 
-                    <div class="value">20</div>
+                    <div class="value"><?php echo $_COOKIE["prof3_quality_4_importance"]; ?></div>
 
-                    <div class="percent">(23.15%)</div>
+                
 
                 </div>
 
 
 
-                <p>Качество 5</p>
+                <p><?php echo $_COOKIE['prof3_quality_5_quality']; ?></p>
 
                 <div class="result">
 
@@ -334,9 +334,9 @@
 
                     </div>
 
-                    <div class="value">2</div>
+                    <div class="value"><?php echo $_COOKIE["prof3_quality_5_importance"]; ?></div>
 
-                    <div class="percent">(23.15%)</div>
+                
 
                 </div>
 
